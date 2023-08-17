@@ -5,6 +5,13 @@ document.getElementById('btn-depo').addEventListener('click', function(){
     const input = inputdepo.value;
     // step 5 is that the input is string and it cant be sum with the current deposit so make it parseFloat to became a number 
     const inputnumber = parseFloat(input)
+
+    inputdepo.value = '';
+
+    if(isNaN(inputnumber)){
+        alert('Please provide a valid number')
+        return;
+    }
     // step 3 get the value from input and get the deposit total by the element 
     // and it is not a input so you must get the result by .innerText 
     const getdepo = document.getElementById('change-depo')
