@@ -8,7 +8,7 @@ document.getElementById('btn-one').addEventListener('click', function(){
     const userpass = document.getElementById('user-pass')
     const pass = userpass.value;
     // warning: dont use this now as a beginner its danger 
-    if(email === 'ahmed44@gmail.com' && pass === 'botmiyad'){
+    if(email === 'mihad44@gmail.com' && pass === 'hellojava'){
         window.location.href = 'bank.html'
     }else{
         alert('It is a wrong information you have given, please re-enter the boxes')
